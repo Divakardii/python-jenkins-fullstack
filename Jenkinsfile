@@ -4,10 +4,10 @@ pipeline {
     stages {
 
         stage('Clone Code') {
-            steps {
-                git 'https://github.com/Divakardii/python-jenkins-fullstack.git'
-            }
-        }
+    steps {
+        git url: 'https://github.com/Divakardii/python-jenkins-fullstack.git', branch: 'main'
+    }
+}
 
         stage('Install Dependencies') {
             steps {
