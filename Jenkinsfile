@@ -2,12 +2,11 @@ pipeline {
  agent any
 
  stages {
-
- stage('Clone Code') {
+stage('Clone Code') {
  steps {
- git 'https://github.com/Divakardii/python-jenkins-fullstack.git'
+ git branch: 'main', url: 'https://github.com/Divakardii/python-jenkins-fullstack.git'
  }
- }
+}
 
  stage('Install Dependencies') {
  steps {
