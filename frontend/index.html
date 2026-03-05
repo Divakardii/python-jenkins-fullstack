@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>Full Stack Python App</title>
+</head>
+
+<body>
+
+<h1>Python Full Stack Application</h1>
+
+<button onclick="callAPI()">Call Backend</button>
+
+<script>
+function callAPI(){
+fetch("http://SERVER-IP:5000/api")
+.then(response => response.json())
+.then(data => alert(data.message))
+}
+</script>
+
+</body>
+</html>
